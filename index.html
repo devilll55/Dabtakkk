@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>منصة ضبطتك PUBG PRO - By 9vi8x</title>
+  
+  <!-- Google Cairo Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=JetBrains+Mono:wght@700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Cairo', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #02040a;
+      color: #f1f5f9;
+      font-family: 'Cairo', sans-serif;
+      overflow-x: hidden;
+      touch-action: pan-y;
+    }
+    .neon-card-blue {
+      background: rgba(6, 11, 22, 0.95);
+      border: 1px solid rgba(0, 243, 255, 0.35);
+      box-shadow: 0 0 25px rgba(0, 243, 255, 0.12);
+    }
+    .neon-card-rose {
+      background: rgba(6, 11, 22, 0.95);
+      border: 1px solid rgba(255, 0, 85, 0.35);
+      box-shadow: 0 0 25px rgba(255, 0, 85, 0.12);
+    }
+    .neon-card-purple {
+      background: rgba(6, 11, 22, 0.95);
+      border: 1px solid rgba(168, 85, 247, 0.35);
+      box-shadow: 0 0 25px rgba(168, 85, 247, 0.12);
+    }
+    .tab-active {
+      background: linear-gradient(135deg, #00f3ff 0%, #ff0055 100%);
+      color: #02040a !important;
+      font-weight: 900 !important;
+      box-shadow: 0 0 15px rgba(0, 243, 255, 0.5);
+    }
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: #02040a; }
+    ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #00f3ff; }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col items-center p-3 md:p-6 pb-28 selection:bg-cyan-500 selection:text-black">
+
+  <!-- TOP BAR: Branding & Creator Mention -->
+  <div class="w-full max-w-7xl flex flex-wrap items-center justify-between gap-3 mb-5 px-2">
+    <div class="flex items-center gap-2.5">
+      <div class="w-10 h-10 rounded-2xl border border-cyan-400 bg-slate-900 flex items-center justify-center font-black text-cyan-300 shadow-[0_0_15px_#00f3ff] text-xs">
+        🎯 9vi
+      </div>
+      <div>
+        <div class="flex items-center gap-2">
+          <span class="text-base font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-rose-400">
+            منصة ضبطتك
+          </span>
+          <span class="text-xs text-amber-300 font-bold bg-amber-950/70 px-2.5 py-0.5 rounded-full border border-amber-500/30">
+            By: 9vi8x
+          </span>
+        </div>
+        <div class="text-[11px] text-slate-400 flex items-center gap-2">
+          <span>حساباتي في تيك توك وانستا:</span>
+          <span class="text-cyan-300 font-bold font-mono">9vi8x</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="w-full max-w-7xl text-center py-6 px-4 border border-cyan-500/30 mb-8 bg-[#060b16]/95 backdrop-blur-md rounded-3xl neon-card-blue relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-80 h-80 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-0 left-0 w-80 h-80 bg-rose-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="flex flex-col md:flex-row items-center justify-center gap-5 mb-3 relative z-10">
+      <div class="w-20 h-20 md:w-24 md:h-24 rounded-3xl border-2 border-cyan-400 bg-slate-900 flex items-center justify-center font-black text-cyan-300 shadow-[0_0_30px_rgba(0,243,255,0.65)] text-2xl">
+        🎯
+      </div>
+      <div class="text-center md:text-right">
+        <h1 class="text-3xl md:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-rose-500 to-purple-400 mb-2 flex items-center justify-center md:justify-start gap-3">
+          ضبطتك <span class="text-xs text-cyan-300 bg-cyan-950/90 px-3 py-1 rounded-full border border-cyan-500/40 font-bold font-mono">PUBG PRO</span>
+        </h1>
+        <p class="text-slate-300 text-xs md:text-sm font-semibold max-w-2xl leading-relaxed">
+          حساسية مناسبة لجهازك وطريقة لعبك — دراسة دقيقة لكل سلاح ونوع ارتداده (شوتكن، AR، سنايبر، SMG) لمنع انتشار الطلق.
+        </p>
+      </div>
+    </div>
+
+    <!-- Creator Credit -->
+    <div class="mt-4 pt-3 border-t border-slate-800/80 flex flex-wrap items-center justify-center gap-4 text-xs font-bold text-slate-300">
+      <span class="text-slate-400">منصة ضبطتك By:</span>
+      <span class="bg-slate-900 px-3.5 py-1.5 rounded-xl border border-rose-500/30 text-rose-300">
+        تيك توك: <strong>9vi8x</strong>
+      </span>
+      <span class="bg-slate-900 px-3.5 py-1.5 rounded-xl border border-purple-500/30 text-purple-300">
+        انستا: <strong>9vi8x</strong>
+      </span>
+    </div>
+  </header>
+
+  <!-- Mode Selector (Classic vs TDM vs Ultimate) -->
+  <div class="w-full max-w-7xl mb-6">
+    <div class="bg-[#060b16] border border-cyan-500/30 p-4 rounded-3xl shadow-lg">
+      <div class="flex items-center justify-between mb-3">
+        <span class="text-xs font-bold text-cyan-300">
+          🎯 اختر نمط اللعب (لكل نمط دراسة ارتداد وتكتيك مخصص):
+        </span>
+        <span class="text-[11px] text-slate-400 font-mono">
+          النمط النشط: <strong id="active-mode-label" class="text-rose-400">Classic</strong>
+        </span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-3" id="mode-buttons-container"></div>
+    </div>
+  </div>
+
+  <!-- Main Grid: Controls & Setup -->
+  <main class="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+    
+    <!-- Column 1: Device Model Input -->
+    <div class="neon-card-blue p-6 rounded-3xl backdrop-blur-md flex flex-col justify-between">
+      <div>
+        <h2 class="text-base font-bold text-cyan-400 mb-4 flex items-center gap-2">
+          📱 1. نوع وموديل جهازك
+        </h2>
+
+        <div class="space-y-4">
+          <div>
+            <label class="block text-slate-300 text-xs font-bold mb-1.5">
+              اكتب اسم ونوع وموديل جهازك بالكامل:
+            </label>
+            <input 
+              type="text"
+              id="device-model-input"
+              value="Infinix Note 50 Pro"
+              placeholder="مثال: Infinix Note 50 Pro / Samsung S24 Ultra"
+              class="w-full bg-slate-900 border border-cyan-500/40 text-cyan-300 p-3.5 rounded-2xl text-xs font-bold focus:border-cyan-400 outline-none shadow-[inset_0_0_10px_rgba(0,0,0,0.5)]"
+            />
+            <span class="text-[11px] text-slate-400 mt-1 block">
+              اكتب موديل جهازك (إنفينكس، سامسونج، ريلمي، آيفون، شاومي، إلخ).
+            </span>
+          </div>
+
+          <div>
+            <label class="block text-slate-300 text-xs font-bold mb-1">نوع الشاشة:</label>
+            <select 
+              id="screen-type-select"
+              class="w-full bg-slate-900 border border-slate-700 text-slate-200 p-3 rounded-2xl text-xs font-semibold focus:border-cyan-500 outline-none"
+            >
+              <option value="phone">هاتف محمول (جوال عادي / بلس)</option>
+              <option value="tablet">جهاز لوحي (آيباد / تابلت)</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Column 2: Layout, Fingers, FPS, Gyro -->
+    <div class="neon-card-rose p-6 rounded-3xl backdrop-blur-md flex flex-col justify-between">
+      <div>
+        <h2 class="text-base font-bold text-rose-400 mb-4 flex items-center gap-2">
+          ⚙️ 2. المخطط، الأصابع والفريمات
+        </h2>
+        
+        <div class="space-y-3.5">
+          <div class="grid grid-cols-2 gap-2">
+            <div>
+              <label class="block text-slate-300 text-xs font-bold mb-1">نوع المخطط:</label>
+              <select 
+                id="layout-select"
+                class="w-full bg-slate-900 border border-slate-700 text-slate-200 p-2.5 rounded-2xl text-xs font-semibold focus:border-rose-500 outline-none"
+              >
+                <option value="مخطط 1">مخطط 1</option>
+                <option value="مخطط 2">مخطط 2</option>
+                <option value="مخطط 3">مخطط 3</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-slate-300 text-xs font-bold mb-1">عدد الأصابع:</label>
+              <select 
+                id="fingers-select"
+                class="w-full bg-slate-900 border border-slate-700 text-slate-200 p-2.5 rounded-2xl text-xs font-semibold focus:border-rose-500 outline-none"
+              >
+                <option value="2 أصابع">2 أصابع</option>
+                <option value="3 أصابع" selected>3 أصابع</option>
+                <option value="4 أصابع">4 أصابع</option>
+                <option value="5 أصابع">5 أصابع</option>
+                <option value="6 أصابع">6 أصابع</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 gap-2">
+            <div>
+              <label class="block text-slate-300 text-xs font-bold mb-1">حجم إبهامك:</label>
+              <select 
+                id="thumb-select"
+                class="w-full bg-slate-900 border border-slate-700 text-slate-200 p-2.5 rounded-2xl text-xs font-semibold focus:border-rose-500 outline-none"
+              >
+                <option value="متوسط" selected>إصبع متوسط</option>
+                <option value="صغير">إصبع صغير</option>
+                <option value="كبير">إصبع كبير</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-slate-300 text-xs font-bold mb-1">الفريمات (FPS):</label>
+              <select 
+                id="fps-select"
+                class="w-full bg-slate-900 border border-slate-700 text-slate-200 p-2.5 rounded-2xl text-xs font-semibold focus:border-rose-500 outline-none font-mono"
+              >
+                <option value="120 FPS">120 إطار (Ultra)</option>
+                <option value="90 FPS" selected>90 إطار (Smooth)</option>
+                <option value="60 FPS">60 إطار (Extreme)</option>
+                <option value="40 FPS">40 إطار (High)</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-slate-300 text-xs font-bold mb-1">نظام الجيروسكوب:</label>
+            <select 
+              id="gyro-select"
+              class="w-full bg-slate-900 border border-slate-700 text-slate-200 p-2.5 rounded-2xl text-xs font-semibold focus:border-rose-500 outline-none"
+            >
+              <option value="مع جيروسكوب" selected>مع جيروسكوب (تضمين جيرو + جيرو ADS)</option>
+              <option value="بدون جيروسكوب">بدون جيروسكوب (سحب بالإصبع - تعويض ADS)</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Column 3: Speed Options -->
+    <div class="neon-card-purple p-6 rounded-3xl backdrop-blur-md flex flex-col justify-between">
+      <div>
+        <h2 class="text-base font-bold text-purple-400 mb-4 flex items-center gap-2">
+          ⚡ 3. سرعة الحساسية (متوازنة أم سريعة)
+        </h2>
+        
+        <div class="space-y-3">
+          <label class="block text-slate-300 text-xs font-bold mb-1.5">
+            اختر نوع الحساسية (قيم واقعية متدرجة لكل سكوب وليست كلها 330):
+          </label>
+
+          <button
+            type="button"
+            id="btn-speed-balanced"
+            onclick="setSpeed('balanced')"
+            class="w-full p-3.5 rounded-2xl border text-right transition cursor-pointer bg-gradient-to-r from-cyan-950 to-slate-900 border-cyan-400 shadow-[0_0_15px_rgba(0,243,255,0.3)]"
+          >
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-xs font-black text-cyan-300">1. متوازنة (Balanced)</span>
+              <span class="text-[10px] bg-cyan-950 text-cyan-300 px-2 py-0.5 rounded-full font-mono">ثبات ليزري</span>
+            </div>
+            <p class="text-[11px] text-slate-400 leading-relaxed">
+              هادئة ومضبوطة لمنع تشتت الإيم، ثبات سكوبات أسطوري للبطولات بدون اهتزاز.
+            </p>
+          </button>
+
+          <button
+            type="button"
+            id="btn-speed-fast"
+            onclick="setSpeed('fast')"
+            class="w-full p-3.5 rounded-2xl border text-right transition cursor-pointer bg-slate-950/70 border-slate-800 text-slate-400 hover:border-slate-700"
+          >
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-xs font-black text-slate-300">2. سريعة (Fast)</span>
+              <span class="text-[10px] bg-rose-950 text-rose-300 px-2 py-0.5 rounded-full font-mono">تدرج طبيعي لكل سكوب</span>
+            </div>
+            <p class="text-[11px] text-slate-400 leading-relaxed">
+              استجابة سريعة جداً للمواجهات والفلكات مع هبوط تدريجي للسكوبات (وليست كلها 330).
+            </p>
+          </button>
+        </div>
+      </div>
+
+      <button 
+        onclick="document.getElementById('results-view').scrollIntoView({ behavior: 'smooth' })"
+        class="mt-4 w-full bg-gradient-to-r from-cyan-400 via-rose-500 to-purple-500 hover:opacity-95 text-slate-950 font-black py-3 rounded-2xl text-xs transition shadow-lg cursor-pointer"
+      >
+        تطبيق المعايرة الآن ⚡
+      </button>
+    </div>
+
+  </main>
+
+  <!-- Main Results Section -->
+  <section id="results-view" class="w-full max-w-7xl neon-card-blue p-5 md:p-8 rounded-3xl backdrop-blur-xl mb-8">
+    
+    <!-- Results Header -->
+    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-6 border-b border-slate-800 pb-5">
+      <div>
+        <h3 id="results-title" class="text-xl md:text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-rose-400 to-amber-300 flex items-center gap-2.5">
+          🎯 حساسية مناسبة لجهازك وطريقة لعبك
+        </h3>
+        <p id="results-subtitle" class="text-xs text-slate-400 mt-1 font-semibold">
+          النمط: Classic | السرعة: متوازنة
+        </p>
+      </div>
+      
+      <button 
+        onclick="copySensitivities()"
+        id="copy-btn"
+        class="bg-cyan-500/20 hover:bg-cyan-500/40 text-cyan-300 text-xs px-4 py-2.5 rounded-xl font-bold border border-cyan-500/40 transition flex items-center gap-1.5 cursor-pointer"
+      >
+        <span>نسخ الأرقام</span>
+      </button>
+    </div>
+
+    <!-- Sensitivity View Container -->
+    <div id="section-sens" class="space-y-6">
+      
+      <!-- Weapon Categories Tabs -->
+      <div class="bg-slate-900/90 p-4 rounded-3xl border border-slate-800 space-y-4">
+        <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-3">
+          <span class="text-xs font-bold text-slate-300 flex items-center gap-1.5">
+            🎯 اختر فئة السلاح أولاً لدراسة ارتداده ودقته:
+          </span>
+
+          <div class="flex flex-wrap gap-1.5 bg-slate-950 p-1.5 rounded-2xl border border-slate-800" id="category-tabs-container"></div>
+        </div>
+
+        <!-- Weapon Selector -->
+        <div class="flex items-center gap-3 bg-slate-950 p-3 rounded-2xl border border-slate-800/80">
+          <span class="text-xs font-bold text-slate-300">السلاح المحدد:</span>
+          <select 
+            id="weapon-select"
+            onchange="onWeaponChange(this.value)"
+            class="bg-slate-900 border border-cyan-500/40 text-cyan-300 px-4 py-2 rounded-xl text-xs font-bold outline-none cursor-pointer"
+          ></select>
+          <span id="weapon-badge-text" class="text-[11px] text-slate-400 mr-auto font-mono"></span>
+        </div>
+      </div>
+
+      <!-- Diagnostic Card -->
+      <div class="bg-gradient-to-br from-slate-950 via-[#060e1d] to-slate-950 p-5 rounded-3xl border border-cyan-500/40 shadow-[0_0_25px_rgba(0,243,255,0.15)] relative overflow-hidden">
+        <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mb-4 pb-4 border-b border-slate-800">
+          <div class="flex items-center gap-3">
+            <div id="diag-avatar" class="w-12 h-12 rounded-2xl bg-gradient-to-br from-cyan-900 to-rose-950 border border-cyan-400 flex items-center justify-center font-black text-white text-sm shadow-[0_0_15px_#00f3ff]">
+              S12
+            </div>
+            <div>
+              <div class="flex items-center gap-2">
+                <h4 id="diag-weapon-name" class="font-black text-white text-base">Saiga-12 / S12K (السيكا)</h4>
+                <span id="diag-category-badge" class="text-[10px] bg-rose-950 text-rose-300 px-2.5 py-0.5 rounded-full border border-rose-500/40 font-bold">
+                  شوتكن نصف أوتوماتيكي سريع 8 طلقات
+                </span>
+              </div>
+              <p class="text-xs text-slate-400 mt-0.5 font-semibold">
+                دراسة ارتداد السلاح وطريقة لعبه لمنع انتشار الطلق بالمللي
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-2 text-xs bg-slate-900/90 px-3 py-2 rounded-xl border border-slate-800">
+            <span class="text-slate-400">الفوهة المناسبة:</span>
+            <strong id="diag-muzzle" class="text-emerald-400">سدادة فوهة السيكا + مخزن موسع سريع AR</strong>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-3.5 text-xs">
+          <div class="bg-slate-900/80 p-3.5 rounded-2xl border border-slate-800 space-y-1">
+            <div class="font-bold text-rose-400 text-[11px]">🔥 طبيعة ارتداد ودقة السلاح:</div>
+            <p id="diag-recoil" class="text-slate-200 leading-relaxed font-semibold"></p>
+          </div>
+
+          <div class="bg-slate-900/80 p-3.5 rounded-2xl border border-slate-800 space-y-1">
+            <div class="font-bold text-amber-300 text-[11px]">⚠️ سلوك انتشار الطلق / الخردق:</div>
+            <p id="diag-spread" class="text-slate-200 leading-relaxed font-semibold"></p>
+          </div>
+
+          <div class="bg-slate-900/80 p-3.5 rounded-2xl border border-cyan-500/30 space-y-1">
+            <div class="font-bold text-cyan-300 text-[11px]">🛡️ تكتيك الحساسية لمنع انتشار الطلق:</div>
+            <p id="diag-tactic" class="text-slate-200 leading-relaxed font-semibold"></p>
+          </div>
+        </div>
+
+        <div class="mt-3.5 pt-3 border-t border-slate-800/80 flex flex-wrap items-center justify-between gap-2 text-[11px] text-slate-300">
+          <div>أفضل مقبض (Grip) وملحقات: <strong id="diag-grip" class="text-cyan-300"></strong></div>
+          <div class="text-slate-400">تم ضبط قيم الحساسية بالأسفل آلياً وفقاً لقوة ارتداد هذا السلاح ونمط لعبك ⚡</div>
+        </div>
+      </div>
+
+      <!-- Scope Tabs & Values Table -->
+      <div class="bg-slate-900/90 p-5 rounded-3xl border border-slate-800">
+        <div class="flex flex-wrap gap-2 mb-6" id="scope-mode-tabs-container"></div>
+        <div id="sensitivity-rows-container" class="space-y-3.5 divide-y divide-slate-800/80 font-mono"></div>
+      </div>
+
+    </div>
+
+    <!-- Joystick View Container -->
+    <div id="section-hud" class="space-y-6 hidden">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <div class="bg-slate-900/90 p-5 rounded-3xl border border-rose-500/30 flex flex-col justify-between">
+          <div>
+            <h4 class="font-bold text-rose-400 mb-3 text-base flex items-center gap-2">
+              🕹️ معايرة الجوستيك التفاعلي لجهازك
+            </h4>
+            
+            <div class="space-y-2.5 text-xs text-slate-200 font-semibold leading-relaxed">
+              <div>🔹 <strong>حجم زر الحركة (الجوستيك):</strong> <span id="hud-joystick-size">105% - 115%</span></div>
+              <div>🔹 <strong>حجم زر إطلاق النار الأيسر:</strong> 160% (مثالي للسبابة)</div>
+              <div>🔹 <strong>حساسية الركض التلقائي (Sprint Sens):</strong> 85% لعدم تعليق الحركة</div>
+              <div>🔹 <strong>مكان زر القفز والجلوس:</strong> زاوية اليمين العلوية (3-4 أصابع)</div>
+            </div>
+
+            <div class="mt-4 p-3 bg-slate-950 rounded-2xl border border-slate-800">
+              <div id="joystick-rating-badge" class="text-xs font-bold text-slate-300">
+                تقييم مكان الجوستيك على الشاشة: <span class="text-emerald-400">⭐ أسطوري (مكان مثالي 100% بدون أي تعليق)</span>
+              </div>
+            </div>
+          </div>
+
+          <button 
+            onclick="resetJoystickToIdeal()"
+            class="mt-4 w-full bg-slate-800 hover:bg-slate-700 text-cyan-300 font-bold py-2.5 rounded-xl text-xs transition border border-cyan-500/30 cursor-pointer"
+          >
+            إعادة النقطة للمكان المثالي تلقائياً 🎯
+          </button>
+        </div>
+
+        <!-- Interactive Screen Preview Area -->
+        <div class="bg-slate-900/90 p-5 rounded-3xl border border-cyan-500/30 flex flex-col justify-between relative overflow-hidden">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-bold text-cyan-300">
+              🎯 اسحب النقطة بإصبعك بحرية لمعايرة موقع الجوستيك:
+            </span>
+            <span id="coords-badge" class="text-[11px] font-mono bg-slate-950 text-cyan-300 px-2 py-0.5 rounded-md border border-cyan-500/30">
+              X: 28% | Y: 72%
+            </span>
+          </div>
+
+          <!-- Touch Area for Joystick -->
+          <div 
+            id="joystick-preview-area"
+            class="w-full h-56 bg-slate-950/90 rounded-2xl border-2 border-slate-800 relative overflow-hidden touch-none cursor-crosshair select-none"
+          >
+            <!-- Guide Grid -->
+            <div class="absolute inset-0 grid grid-cols-4 grid-rows-4 pointer-events-none opacity-20">
+              <div class="border-b border-r border-slate-600"></div>
+              <div class="border-b border-r border-slate-600"></div>
+              <div class="border-b border-r border-slate-600"></div>
+              <div class="border-b border-slate-600"></div>
+              <div class="border-b border-r border-slate-600"></div>
+              <div class="border-b border-r border-slate-600"></div>
+              <div class="border-b border-r border-slate-600"></div>
+              <div class="border-b border-slate-600"></div>
+              <div class="border-b border-r border-slate-600"></div>
+              <div class="border-b border-r border-slate-600"></div>
+              <div class="border-b border-r border-slate-600"></div>
+              <div class="border-b border-slate-600"></div>
+            </div>
+
+            <!-- Ideal Zone -->
+            <div class="absolute left-[18%] bottom-[8%] w-[26%] h-[36%] border-2 border-dashed border-emerald-500/40 bg-emerald-950/20 rounded-2xl flex items-center justify-center pointer-events-none">
+              <span class="text-[10px] text-emerald-400 font-bold opacity-80">المنطقة الأسطورية ⭐</span>
+            </div>
+
+            <!-- Movable Smaller Joystick Point -->
+            <div 
+              id="joystick-point-container"
+              class="absolute -translate-x-1/2 -translate-y-1/2 pointer-events-none transition-transform"
+              style="left: 28%; top: 72%;"
+            >
+              <div id="joystick-outer-ring" class="w-12 h-12 rounded-full border border-dashed border-emerald-400/60 bg-emerald-950/20 shadow-[0_0_15px_rgba(16,185,129,0.3)] flex items-center justify-center transition-all">
+                <div class="absolute top-0.5 w-1 h-1 rounded-full bg-cyan-400/70"></div>
+                <div class="absolute bottom-0.5 w-1 h-1 rounded-full bg-cyan-400/70"></div>
+                <div class="absolute left-0.5 w-1 h-1 rounded-full bg-cyan-400/70"></div>
+                <div class="absolute right-0.5 w-1 h-1 rounded-full bg-cyan-400/70"></div>
+
+                <div id="joystick-inner-knob" class="w-5 h-5 rounded-full border-2 border-white bg-emerald-400 shadow-[0_0_15px_#10b981] flex items-center justify-center transition-transform">
+                  <div class="w-1.5 h-1.5 rounded-full bg-white shadow-sm"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-2 text-[11px] text-slate-400 flex items-center justify-between">
+            <span>💡 حرّك النقطة للمنطقة الخضراء بالأسفل لتفادي تعليق الركض.</span>
+            <span class="text-cyan-300 font-mono text-[10px]">استجابة لمس فورية</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- WIDE BOTTOM NAVIGATION BAR -->
+  <div class="fixed bottom-0 inset-x-0 z-40 bg-[#040812]/95 border-t border-cyan-500/40 backdrop-blur-2xl p-2.5 shadow-[0_-10px_35px_rgba(0,0,0,0.85)]">
+    <div class="max-w-2xl mx-auto grid grid-cols-2 gap-3">
+      <button
+        id="btn-tab-sens"
+        onclick="switchBottomTab('sens')"
+        class="py-3.5 px-4 rounded-2xl text-xs md:text-sm font-black transition transform active:scale-95 flex items-center justify-center gap-2 cursor-pointer bg-gradient-to-r from-cyan-400 to-rose-500 text-slate-950 shadow-[0_0_20px_rgba(0,243,255,0.4)]"
+      >
+        <span>الحساسية المخصصة للأسلحة والسكوبات</span>
+      </button>
+
+      <button
+        id="btn-tab-hud"
+        onclick="switchBottomTab('hud')"
+        class="py-3.5 px-4 rounded-2xl text-xs md:text-sm font-black transition transform active:scale-95 flex items-center justify-center gap-2 cursor-pointer bg-slate-900/90 text-slate-300 hover:text-white border border-slate-800"
+      >
+        <span>معايرة الجوستيك التفاعلي</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w-full max-w-7xl bg-[#060b16]/95 border border-slate-800 p-5 rounded-3xl flex flex-wrap justify-between items-center gap-4 text-xs font-bold text-slate-300 mb-6">
+    <div class="flex items-center gap-3">
+      <div class="w-8 h-8 rounded-xl border border-cyan-500/40 bg-slate-900 flex items-center justify-center font-black text-cyan-300">
+        9vi
+      </div>
+      <div>
+        <span class="text-cyan-400 font-bold block">منصة ضبطتك PUBG PRO ULTRA</span>
+        <span class="text-[11px] text-slate-400">By: <strong>9vi8x</strong></span>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3 text-xs">
+      <span class="text-rose-400">تيك توك: <strong>9vi8x</strong></span>
+      <span class="text-purple-400">انستا: <strong>9vi8x</strong></span>
+    </div>
+  </footer>
+
+  <!-- Complete Standalone JavaScript Application Engine -->
+  <script>
+    const state = {
+      deviceModel: 'Infinix Note 50 Pro',
+      screen: 'phone',
+      layout: 'مخطط 1',
+      fingers: '3 أصابع',
+      thumb: 'متوسط',
+      fps: '90 FPS',
+      mode: 'Classic',
+      gyro: 'مع جيروسكوب',
+      sensSpeed: 'balanced',
+      currentCategory: 'SG',
+      currentWeapon: 'Saiga-12 / S12K (السيكا)',
+      currentTab: 'camera',
+      activeBottomTab: 'sens',
+      joystick: { x: 28, y: 72, rating: 'legendary' }
+    };
+
+    const weaponDatabase = {
+      "SG": ["Saiga-12 / S12K (السيكا)", "DBS (الدبس)", "M1014 (شوتكن ليفيك)", "S686 (دبل بارل)", "S1897 (بمب أكشن)"],
+      "AR": ["M416", "Beryl M762", "AKM", "Groza", "AUG A3", "Scar-L", "ACE32", "Honey Badger", "FAMAS", "QBZ", "M16A4", "G36C"],
+      "SMG": ["P90 (إيردروب أسطوري)", "UMP45", "Vector", "Micro UZI", "Thompson (تومي غان)", "PP-Bizon"],
+      "SR": ["AWM (ماغنوم)", "AMR (مضاد للدروع)", "M24", "Kar98k", "Win94", "Mosin Nagant"],
+      "DMR": ["Mini14", "SLR", "SKS", "Mk14 (الوحش)", "Mk12", "QBU", "VSS"],
+      "LMG": ["MG3 (رشاش ثقيل 990)", "DP-28 (الصحن)", "M249 (البي سي)"],
+      "Pistol": ["P18C (مسدس رشاش)", "Desert Eagle (نسر الصحراء)", "Skorpion", "P1911", "P92"]
+    };
+
+    const weaponPhysicsMap = {
+      "Saiga-12 / S12K (السيكا)": {
+        category: 'SG',
+        arabicCategory: 'شوتكن نصف أوتوماتيكي سريع 8 طلقات (S12K السيكا)',
+        recoilTrait: 'أعنف ارتداد رأسي متتابع بين أسلحة الشوتكن عند النقر السريع لـ 8 طلقات متتالية',
+        spreadBehavior: 'قفز الفوهة للأعلى بعد أول طلقتين مما يتسبب في تفويت باقي الرصاص فوق رأس الخصم',
+        spreadPreventionTactic: 'معايرة خاصة جداً لزيادة قوة سحب الـ ADS والجايرو لأسفل لتثبيت النقطة الحمراء (Red Dot) على النحر وأعلى الصدر أثناء النقر السريع، مع فلكات خاطفة بدون منظار',
+        bestGrip: 'لا تدعم قبضة (تعتمد كلياً على سحب الـ ADS المحكوم)',
+        bestMuzzle: 'سدادة فوهة السيكا (Duckbill أو Choke) + مخزن موسع سريع AR (8 طلقات)',
+        camOffset: 9, adsOffset: 12, gyroOffset: 18,
+        scopeMultipliers: [1.14, 1.14, 1.12, 1.12, 1.20, 0.95, 0.65, 0.50, 0.35, 0.22]
+      },
+      "DBS (الدبس)": {
+        category: 'SG',
+        arabicCategory: 'شوتكن بمب ثنائي فتاك (DBS)',
+        recoilTrait: 'طلقتان متتاليتان سريعتان (Double Pump) بدون ارتداد رش، مع حسم فوري للمواجهة',
+        spreadBehavior: 'انتشار دائري محكم للخردق بفضل التشوك المدمج',
+        spreadPreventionTactic: 'حساسية فلكات No-Scope خاطفة 180° للقفز المباغت، مع ريد دوت متزن في الصدر وتخفيض السكوبات العالية',
+        bestGrip: 'لا يوجد (تركيز على الـ Hip-Fire والفلكات)',
+        bestMuzzle: 'سدادة فوهة الشوتكن (Choke) إجبارية لتضييق انتشار الخردق بنسبة 25%',
+        camOffset: 8, adsOffset: 4, gyroOffset: 14,
+        scopeMultipliers: [1.14, 1.14, 1.14, 1.14, 1.05, 0.75, 0.55, 0.45, 0.35, 0.22]
+      },
+      "M1014 (شوتكن ليفيك)": {
+        category: 'SG',
+        arabicCategory: 'شوتكن تلقائي سريع 7 طلقات (M1014)',
+        recoilTrait: 'إطلاق متتابع وسلس لـ 7 طلقات في ممرات ليفيك الضيقة',
+        spreadBehavior: 'تجمع خردق متوازن في المدى القريب (0-15م)',
+        spreadPreventionTactic: 'سحب هادئ ومستمر مع توجيه الفوهة على منتصف الهدف',
+        bestGrip: 'حزام رصاص لتسريع التلقيم',
+        bestMuzzle: 'سدادة فوهة الشوتكن (Choke)',
+        camOffset: 8, adsOffset: 6, gyroOffset: 12,
+        scopeMultipliers: [1.12, 1.12, 1.12, 1.12, 1.06, 0.75, 0.55, 0.45, 0.35, 0.22]
+      },
+      "S1897 (بمب أكشن)": {
+        category: 'SG',
+        arabicCategory: 'شوتكن بمب يدوي كلاسيكي (S1897)',
+        recoilTrait: 'طلقة واحدة مميتة تفرغ كامل الخردق دفعة واحدة بضرر هائل',
+        spreadBehavior: 'دقة نقطية تعتمد على إصابة كامل الخردق بضربة واحدة',
+        spreadPreventionTactic: 'الـ Pre-aim والتصويب الدقيق من خلف الكفر مع سدادة الشوتكن',
+        bestGrip: 'حزام رصاص',
+        bestMuzzle: 'سدادة فوهة الشوتكن (Choke)',
+        camOffset: 8, adsOffset: 3, gyroOffset: 11,
+        scopeMultipliers: [1.12, 1.12, 1.12, 1.12, 1.02, 0.70, 0.50, 0.40, 0.30, 0.20]
+      },
+      "S686 (دبل بارل)": {
+        category: 'SG',
+        arabicCategory: 'شوتكن دبل بارل ثنائي خاطف (S686)',
+        recoilTrait: 'أسرع ضربة ثنائية باللعبة، طلقتان بفارق 0.2 ثانية',
+        spreadBehavior: 'تجمع خردق كثيف يحسم الفايت فورياً',
+        spreadPreventionTactic: 'فلك خاطف فوري على الرأس والصدر مع الاستعانة بسدادة الشوتكن',
+        bestGrip: 'حزام رصاص',
+        bestMuzzle: 'سدادة فوهة الشوتكن (Choke) إجبارية',
+        camOffset: 9, adsOffset: 4, gyroOffset: 13,
+        scopeMultipliers: [1.15, 1.15, 1.16, 1.16, 1.04, 0.70, 0.50, 0.40, 0.30, 0.20]
+      },
+      "M416": {
+        category: 'AR',
+        arabicCategory: 'بندقية هجومية ليزرية عيار 5.56 (AR)',
+        recoilTrait: 'ارتداد متوازن ومنخفض جداً، ثبات أفقي ممتاز وسهل السيطرة',
+        spreadBehavior: 'تجمع رصاص ليزري مثالي في الرش بالسكوبات المتوسطة (3x و 4x)',
+        spreadPreventionTactic: 'سحب تدريجي وهادئ للأسفل، استخدام قبضة نصفية لامتصاص الاهتزاز والحفاظ على الرصاص في دائرة واحدة',
+        bestGrip: 'قبضة نصفية (Half Grip) أو رأسية (Vertical) + تاكتيكال ستوك',
+        bestMuzzle: 'معوض AR (Compensator)',
+        camOffset: 0, adsOffset: 0, gyroOffset: 0,
+        scopeMultipliers: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+      },
+      "Beryl M762": {
+        category: 'AR',
+        arabicCategory: 'بندقية هجومية ثقيلة عيار 7.62 (AR)',
+        recoilTrait: 'ارتداد رأسي عنيف وقوي جداً مع ركلات جانبية بعد الرصاصة الخامسة',
+        spreadBehavior: 'ميل الرصاص للصعود السريع فوق رأس الخصم وتشتت الرذاذ إذا لم يُسحب بقوة',
+        spreadPreventionTactic: 'رفع حساسية ADS والجايرو بنسبة إضافية (+12%) لتمكين السحب الكافي، وإطلاق النار بدفعات من 8 إلى 10 رصاصات',
+        bestGrip: 'قبضة رأسية (Vertical Grip) إجبارية لكسر الصعود العمودي',
+        bestMuzzle: 'معوض AR إلزامي لمنع الانحراف الجانبي',
+        camOffset: 3, adsOffset: 8, gyroOffset: 12,
+        scopeMultipliers: [1.02, 1.02, 1.03, 1.03, 1.08, 1.06, 1.05, 1.0, 0.90, 0.80]
+      },
+      "AKM": {
+        category: 'AR',
+        arabicCategory: 'بندقية هجومية ثقيلة كلاسيكية 7.62 (AR)',
+        recoilTrait: 'ارتداد ثقيل من الرصاصة الأولى مع اهتزاز أفقي واضح',
+        spreadBehavior: 'انتشار واسع للرصاص على المسافات التي تتجاوز 40 متراً',
+        spreadPreventionTactic: 'توجيه الإيم نحو منتصف البطن والصدر لترتفع الطلقات تلقائياً إلى الخوذة (هيدشوت)، والاعتماد على الريد دوت بالكلوز',
+        bestGrip: 'لا تدعم قبضة (تعتمد على المعوض ومهارة السحب)',
+        bestMuzzle: 'معوض AR لتقليل انحراف الرصاص',
+        camOffset: 3, adsOffset: 7, gyroOffset: 10,
+        scopeMultipliers: [1.03, 1.03, 1.04, 1.04, 1.07, 1.04, 0.98, 0.92, 0.85, 0.75]
+      },
+      "AWM (ماغنوم)": {
+        category: 'SR',
+        arabicCategory: 'وحش القنص والون شوت (SR)',
+        recoilTrait: 'طلقة واحدة مميتة تكسر خوذة لفل 3 بضربة واحدة، بدون ارتداد رش',
+        spreadBehavior: 'طلقة نقطية دقيقة 100%، تتطلب منع أي اهتزاز أو رجفة في السكوب',
+        spreadPreventionTactic: 'تثبيت وتهدئة حساسية سكوب 6x و 8x (حساسية هادئة وثابتة) لوضع النقطة في منتصف خوذة الخصم بدون أن تقفز الشاشة',
+        bestGrip: 'وسادة خد (Cheek Pad) لمنع تأرجح السكوب',
+        bestMuzzle: 'كاتم صوت القناصة (Sniper Suppressor)',
+        camOffset: -4, adsOffset: -6, gyroOffset: -8,
+        scopeMultipliers: [0.95, 0.95, 0.95, 0.95, 0.92, 0.90, 0.88, 0.84, 0.76, 0.70]
+      }
+    };
+
+    const scopeLabels = [
+      'TPP No Scope (بدون منظور الشخص الثالث)',
+      'FPP No Scope (بدون منظور الشخص الأول)',
+      'TPP Aim (التصويب للشخص الثالث)',
+      'FPP Aim (التصويب للشخص الأول)',
+      'Red Dot, Holographic, Iron Sight (ريد دوت وهولو)',
+      '2x Scope (سكوب 2x)',
+      '3x Scope, Win94 (سكوب 3x)',
+      '4x Scope, VSS (سكوب 4x)',
+      '6x Scope (سكوب 6x)',
+      '8x Scope (سكوب 8x)'
+    ];
+
+    function calculateSens(weaponName, tab) {
+      const isFast = state.sensSpeed === 'fast';
+      const isTDM = state.mode === 'TDM';
+      const isUltimate = state.mode === 'Ultimate / Royal';
+
+      let cCam, cAds, cGyro, cAdsGyro;
+
+      if (isTDM) {
+        if (isFast) {
+          cCam = [135, 124, 110, 100, 68, 48, 33, 23, 16, 11];
+          cAds = [130, 120, 105, 96, 64, 44, 30, 21, 15, 10];
+          cGyro = [315, 295, 270, 250, 225, 185, 150, 110, 72, 40];
+          cAdsGyro = [310, 290, 265, 245, 218, 178, 142, 102, 66, 36];
+        } else {
+          cCam = [118, 108, 95, 86, 58, 42, 29, 20, 14, 10];
+          cAds = [114, 104, 90, 82, 54, 38, 26, 18, 13, 9];
+          cGyro = [288, 272, 248, 228, 202, 165, 130, 90, 58, 32];
+          cAdsGyro = [282, 266, 242, 220, 195, 158, 122, 84, 54, 28];
+        }
+      } else if (isUltimate) {
+        if (isFast) {
+          cCam = [130, 120, 106, 96, 64, 45, 31, 22, 15, 11];
+          cAds = [125, 115, 100, 92, 60, 41, 28, 20, 14, 10];
+          cGyro = [312, 292, 266, 246, 218, 178, 142, 105, 68, 38];
+          cAdsGyro = [306, 286, 260, 240, 212, 172, 135, 98, 62, 34];
+        } else {
+          cCam = [112, 102, 88, 80, 54, 38, 27, 18, 13, 9];
+          cAds = [108, 98, 84, 76, 50, 34, 24, 16, 12, 8];
+          cGyro = [282, 268, 242, 222, 195, 158, 122, 85, 55, 30];
+          cAdsGyro = [276, 262, 236, 214, 188, 150, 115, 78, 50, 26];
+        }
+      } else {
+        if (isFast) {
+          cCam = [126, 116, 102, 94, 60, 42, 29, 21, 15, 10];
+          cAds = [120, 110, 96, 88, 56, 38, 26, 19, 13, 9];
+          cGyro = [308, 288, 262, 242, 212, 172, 138, 102, 66, 36];
+          cAdsGyro = [302, 282, 256, 236, 206, 166, 130, 94, 60, 32];
+        } else {
+          cCam = [105, 95, 84, 78, 52, 36, 26, 18, 13, 9];
+          cAds = [100, 90, 80, 74, 48, 32, 23, 16, 12, 8];
+          cGyro = [278, 262, 238, 218, 188, 152, 118, 82, 54, 28];
+          cAdsGyro = [272, 256, 230, 208, 180, 144, 110, 75, 48, 25];
+        }
+      }
+
+      const weaponData = weaponPhysicsMap[weaponName] || {
+        category: state.currentCategory,
+        arabicCategory: 'سلاح قياسي',
+        recoilTrait: 'ارتداد قياسي',
+        spreadBehavior: 'تجمع رصاص قياسي',
+        spreadPreventionTactic: 'تثبيت الإيم العادي',
+        bestGrip: 'قبضة رأسية أو نصفية',
+        bestMuzzle: 'معوض AR',
+        camOffset: 0, adsOffset: 0, gyroOffset: 0,
+        scopeMultipliers: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+      };
+
+      const isShotgun = weaponData.category === 'SG';
+      const isSniper = weaponData.category === 'SR';
+      const screenMul = state.screen === 'tablet' ? 0.86 : 1.0;
+      const nonGyroAdsBoost = state.gyro === 'بدون جيروسكوب' ? 1.30 : 1.0;
+
+      let fpsMul = 1.0;
+      if (state.fps === '40 FPS') fpsMul = 1.08;
+      else if (state.fps === '60 FPS') fpsMul = 1.03;
+      else if (state.fps === '120 FPS') fpsMul = 0.97;
+
+      let base = (tab === 'camera') ? cCam : (tab === 'ads') ? cAds : (tab === 'gyro') ? cGyro : cAdsGyro;
+
+      const gyroCeilings = [320, 300, 275, 255, 230, 190, 155, 115, 75, 45];
+      const camCeilings = [142, 130, 118, 108, 72, 52, 36, 26, 18, 13];
+
+      return base.map((val, idx) => {
+        let v = val;
+        if (tab === 'camera') v += weaponData.camOffset;
+        else if (tab === 'ads') v += weaponData.adsOffset;
+        else v += weaponData.gyroOffset;
+
+        v = v * (weaponData.scopeMultipliers[idx] || 1.0);
+
+        if (isShotgun) {
+          const isS12K = weaponName.includes('S12K') || weaponName.includes('السيكا');
+          if (idx <= 3) v = Math.round(v * 1.14);
+          else if (idx === 4) v = Math.round(v * (isS12K ? 1.18 : 1.05));
+          else if (idx === 5) v = Math.round(v * (isS12K ? 0.95 : 0.70));
+          else v = Math.round(v * (idx >= 8 ? 0.35 : 0.50));
+        } else if (isSniper && idx >= 6) {
+          v = Math.round(v * 0.78);
+        }
+
+        v = Math.round(v * screenMul * fpsMul * (tab === 'ads' ? nonGyroAdsBoost : 1.0));
+        const ceiling = (tab === 'gyro' || tab === 'adsGyro') ? gyroCeilings[idx] : camCeilings[idx];
+        return Math.max(1, Math.min(ceiling, v));
+      });
+    }
+
+    function renderModeButtons() {
+      const container = document.getElementById('mode-buttons-container');
+      const modes = [
+        { id: 'Classic', title: 'كلاسيك (Classic)', tag: 'بطولات ورشاشات وسكوبات', desc: 'حساسية متوازنة لثبات سكوبات 3x و 4x و 6x في الخرائط الكبيرة بدون تشتت.' },
+        { id: 'TDM', title: 'تي دي ام (TDM)', tag: 'المستودع ومواجهات 1v1', desc: 'حساسية سريعة للمواجهات القريبة والـ Hip-fire مع ريد دوت خاطف وسريع.' },
+        { id: 'Ultimate / Royal', title: 'ألتميت (Ultimate)', tag: 'أسلحة ثقيلة ودروب', desc: 'معايرة لامتصاص ارتداد أسلحة الدروب الفتاكة (MG3, Groza, P90, Mk14).' },
+      ];
+
+      container.innerHTML = modes.map(m => {
+        const isSel = state.mode === m.id;
+        return `
+          <button
+            onclick="setMode('${m.id}')"
+            class="p-4 rounded-2xl text-right transition border cursor-pointer ${
+              isSel 
+                ? 'bg-gradient-to-br from-cyan-950 via-slate-900 to-rose-950 border-cyan-400 shadow-[0_0_20px_rgba(0,243,255,0.3)]' 
+                : 'bg-slate-950/70 border-slate-800 hover:border-slate-700 text-slate-300'
+            }"
+          >
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-sm font-black ${isSel ? 'text-cyan-300' : 'text-slate-200'}">${m.title}</span>
+              <span class="text-[10px] px-2 py-0.5 rounded-full font-bold ${isSel ? 'bg-cyan-500 text-black' : 'bg-slate-800 text-slate-400'}">${m.tag}</span>
+            </div>
+            <p class="text-[11px] text-slate-400 leading-relaxed">${m.desc}</p>
+          </button>
+        `;
+      }).join('');
+    }
+
+    function renderCategoryTabs() {
+      const container = document.getElementById('category-tabs-container');
+      const cats = [
+        { id: 'SG', label: 'الشوتكن (SG)' },
+        { id: 'AR', label: 'بنادق هجومية (AR)' },
+        { id: 'SMG', label: 'رشاشات خفيفة (SMG)' },
+        { id: 'SR', label: 'قناصات ون شوت (SR)' },
+        { id: 'DMR', label: 'قناصات سريعة (DMR)' },
+        { id: 'LMG', label: 'رشاشات ثقيلة (LMG)' },
+        { id: 'Pistol', label: 'المسدسات' }
+      ];
+
+      container.innerHTML = cats.map(c => `
+        <button
+          onclick="setCategory('${c.id}')"
+          class="px-3 py-1.5 rounded-xl text-xs transition font-bold cursor-pointer ${state.currentCategory === c.id ? 'tab-active' : 'text-slate-300 hover:text-white'}"
+        >
+          ${c.label}
+        </button>
+      `).join('');
+    }
+
+    function populateWeaponSelect() {
+      const select = document.getElementById('weapon-select');
+      const weapons = weaponDatabase[state.currentCategory] || [];
+      select.innerHTML = weapons.map(w => `
+        <option value="${w}" ${state.currentWeapon === w ? 'selected' : ''}>${w}</option>
+      `).join('');
+      updateWeaponDiagnostic();
+    }
+
+    function updateWeaponDiagnostic() {
+      const data = weaponPhysicsMap[state.currentWeapon] || {
+        arabicCategory: state.currentCategory,
+        recoilTrait: 'سلاح قياسي',
+        spreadBehavior: 'تجمع رصاص قياسي',
+        spreadPreventionTactic: 'تثبيت السلاح العادي',
+        bestGrip: 'قبضة رأسية أو نصفية',
+        bestMuzzle: 'معوض AR'
+      };
+
+      document.getElementById('diag-avatar').innerText = state.currentWeapon.slice(0, 3);
+      document.getElementById('diag-weapon-name').innerText = state.currentWeapon;
+      document.getElementById('diag-category-badge').innerText = data.arabicCategory;
+      document.getElementById('diag-muzzle').innerText = data.bestMuzzle;
+      document.getElementById('diag-recoil').innerText = data.recoilTrait;
+      document.getElementById('diag-spread').innerText = data.spreadBehavior;
+      document.getElementById('diag-tactic').innerText = data.spreadPreventionTactic;
+      document.getElementById('diag-grip').innerText = data.bestGrip;
+      document.getElementById('weapon-badge-text').innerText = data.arabicCategory;
+
+      renderSensitivityRows();
+    }
+
+    function renderScopeTabs() {
+      const container = document.getElementById('scope-mode-tabs-container');
+      const tabs = [
+        { id: 'camera', label: 'حساسية الكاميرا (Camera)' },
+        { id: 'ads', label: 'حساسية ADS (إطلاق النار)' },
+        { id: 'gyro', label: 'حساسية الجيروسكوب' },
+        { id: 'adsGyro', label: 'حساسية جيرو ADS' },
+      ];
+
+      container.innerHTML = tabs.map(t => `
+        <button
+          onclick="setScopeTab('${t.id}')"
+          class="px-4 py-2.5 rounded-xl text-xs font-bold transition cursor-pointer ${
+            state.currentTab === t.id
+              ? 'bg-slate-950 text-cyan-300 border border-cyan-500/50 shadow-md shadow-cyan-500/10'
+              : 'bg-slate-950/60 text-slate-400 hover:text-slate-200 border border-transparent'
+          }"
+        >
+          ${t.label}
+        </button>
+      `).join('');
+    }
+
+    function renderSensitivityRows() {
+      const container = document.getElementById('sensitivity-rows-container');
+      const isGyro = state.gyro === 'مع جيروسكوب';
+      
+      if (!isGyro && (state.currentTab === 'gyro' || state.currentTab === 'adsGyro')) {
+        container.innerHTML = `
+          <div class="text-center py-10 bg-slate-950 rounded-2xl border border-rose-500/20">
+            <p class="text-rose-400 font-bold text-sm">⚠️ نظام الجيروسكوب معطل في إعداداتك بالأعلى!</p>
+            <p class="text-xs text-slate-400 mt-1">اختر "مع جيروسكوب" في الخطوة رقم 2 لتفعيل هذه الحساسية.</p>
+          </div>
+        `;
+        return;
+      }
+
+      const values = calculateSens(state.currentWeapon, state.currentTab);
+
+      container.innerHTML = scopeLabels.map((label, idx) => {
+        const val = values[idx] || 50;
+        const width = Math.min(100, Math.round((val / 320) * 100));
+
+        return `
+          <div class="pt-3.5 first:pt-0 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+            <span class="text-xs md:text-sm font-bold text-slate-200">${label}</span>
+            <div class="flex items-center gap-3 w-full sm:w-auto justify-end">
+              <div class="w-28 sm:w-44 md:w-64 bg-slate-950 h-3 rounded-full overflow-hidden border border-slate-800 relative">
+                <div class="bg-gradient-to-r from-cyan-400 via-rose-500 to-purple-500 h-full rounded-full transition-all duration-300" style="width: ${width}%"></div>
+              </div>
+              <div class="bg-slate-950 px-3.5 py-1.5 rounded-xl border border-cyan-500/40 text-cyan-300 text-center min-w-16">
+                <span class="font-black text-sm md:text-base font-mono">${val}%</span>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      document.getElementById('results-subtitle').innerText = `النمط: ${state.mode} | السرعة: ${state.sensSpeed === 'fast' ? 'سريعة' : 'متوازنة'} | سلاح ${state.currentWeapon}`;
+    }
+
+    function setMode(m) {
+      state.mode = m;
+      document.getElementById('active-mode-label').innerText = m;
+      renderModeButtons();
+      renderSensitivityRows();
+    }
+
+    function setSpeed(s) {
+      state.sensSpeed = s;
+      const b1 = document.getElementById('btn-speed-balanced');
+      const b2 = document.getElementById('btn-speed-fast');
+      if (s === 'balanced') {
+        b1.className = 'w-full p-3.5 rounded-2xl border text-right transition cursor-pointer bg-gradient-to-r from-cyan-950 to-slate-900 border-cyan-400 shadow-[0_0_15px_rgba(0,243,255,0.3)]';
+        b2.className = 'w-full p-3.5 rounded-2xl border text-right transition cursor-pointer bg-slate-950/70 border-slate-800 text-slate-400 hover:border-slate-700';
+      } else {
+        b1.className = 'w-full p-3.5 rounded-2xl border text-right transition cursor-pointer bg-slate-950/70 border-slate-800 text-slate-400 hover:border-slate-700';
+        b2.className = 'w-full p-3.5 rounded-2xl border text-right transition cursor-pointer bg-gradient-to-r from-purple-950 to-rose-950 border-rose-400 shadow-[0_0_15px_rgba(255,0,85,0.3)]';
+      }
+      renderSensitivityRows();
+    }
+
+    function setCategory(cat) {
+      state.currentCategory = cat;
+      state.currentWeapon = weaponDatabase[cat][0];
+      renderCategoryTabs();
+      populateWeaponSelect();
+    }
+
+    function onWeaponChange(w) {
+      state.currentWeapon = w;
+      updateWeaponDiagnostic();
+    }
+
+    function setScopeTab(tab) {
+      state.currentTab = tab;
+      renderScopeTabs();
+      renderSensitivityRows();
+    }
+
+    function switchBottomTab(tab) {
+      state.activeBottomTab = tab;
+      const sSens = document.getElementById('section-sens');
+      const sHud = document.getElementById('section-hud');
+      const bSens = document.getElementById('btn-tab-sens');
+      const bHud = document.getElementById('btn-tab-hud');
+
+      if (tab === 'sens') {
+        sSens.classList.remove('hidden');
+        sHud.classList.add('hidden');
+        bSens.className = 'py-3.5 px-4 rounded-2xl text-xs md:text-sm font-black transition transform active:scale-95 flex items-center justify-center gap-2 cursor-pointer bg-gradient-to-r from-cyan-400 to-rose-500 text-slate-950 shadow-[0_0_20px_rgba(0,243,255,0.4)]';
+        bHud.className = 'py-3.5 px-4 rounded-2xl text-xs md:text-sm font-black transition transform active:scale-95 flex items-center justify-center gap-2 cursor-pointer bg-slate-900/90 text-slate-300 hover:text-white border border-slate-800';
+      } else {
+        sSens.classList.add('hidden');
+        sHud.classList.remove('hidden');
+        bSens.className = 'py-3.5 px-4 rounded-2xl text-xs md:text-sm font-black transition transform active:scale-95 flex items-center justify-center gap-2 cursor-pointer bg-slate-900/90 text-slate-300 hover:text-white border border-slate-800';
+        bHud.className = 'py-3.5 px-4 rounded-2xl text-xs md:text-sm font-black transition transform active:scale-95 flex items-center justify-center gap-2 cursor-pointer bg-gradient-to-r from-rose-500 to-amber-400 text-slate-950 shadow-[0_0_20px_rgba(255,0,85,0.4)]';
+      }
+    }
+
+    function copySensitivities() {
+      const values = calculateSens(state.currentWeapon, state.currentTab);
+      let text = `🎯 إعدادات ${state.currentWeapon} - منصة ضبطتك:\n`;
+      text += `📱 الجهاز: ${state.deviceModel} (${state.fps})\n`;
+      text += `⚔️ النمط: ${state.mode} | السرعة: ${state.sensSpeed}\n`;
+      text += `🎮 المخطط: ${state.layout} (${state.fingers})\n------------------------------------\n`;
+      scopeLabels.forEach((l, i) => { text += `• ${l}: ${values[i]}%\n`; });
+      text += `\nحساسية مناسبة لجهازك وطريقة لعبك\nBy: 9vi8x (تيك توك وانستا: 9vi8x)`;
+
+      navigator.clipboard.writeText(text).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.innerText = 'تم النسخ بنجاح! ✓';
+        setTimeout(() => { btn.innerText = 'نسخ الأرقام'; }, 2000);
+      });
+    }
+
+    // Draggable Joystick
+    const previewArea = document.getElementById('joystick-preview-area');
+    const pointContainer = document.getElementById('joystick-point-container');
+    const outerRing = document.getElementById('joystick-outer-ring');
+    const innerKnob = document.getElementById('joystick-inner-knob');
+    const coordsBadge = document.getElementById('coords-badge');
+    const ratingBadge = document.getElementById('joystick-rating-badge');
+    let isDragging = false;
+
+    function updateJoystick(clientX, clientY) {
+      const rect = previewArea.getBoundingClientRect();
+      const rawX = ((clientX - rect.left) / rect.width) * 100;
+      const rawY = ((clientY - rect.top) / rect.height) * 100;
+
+      const x = Math.max(6, Math.min(94, Math.round(rawX)));
+      const y = Math.max(6, Math.min(94, Math.round(rawY)));
+
+      state.joystick.x = x;
+      state.joystick.y = y;
+
+      pointContainer.style.left = x + '%';
+      pointContainer.style.top = y + '%';
+      coordsBadge.innerText = `X: ${x}% | Y: ${y}%`;
+
+      if (x >= 18 && x <= 40 && y >= 56 && y <= 88) {
+        if (x >= 22 && x <= 34 && y >= 64 && y <= 80) {
+          state.joystick.rating = 'legendary';
+          innerKnob.className = 'w-5 h-5 rounded-full border-2 border-white bg-emerald-400 shadow-[0_0_15px_#10b981] flex items-center justify-center transition-transform';
+          outerRing.className = 'w-12 h-12 rounded-full border border-dashed border-emerald-400/60 bg-emerald-950/20 shadow-[0_0_15px_rgba(16,185,129,0.3)] flex items-center justify-center transition-all';
+          ratingBadge.innerHTML = 'تقييم مكان الجوستيك على الشاشة: <span class="text-emerald-400">⭐ أسطوري (مكان مثالي 100% بدون أي تعليق)</span>';
+        } else {
+          state.joystick.rating = 'good';
+          innerKnob.className = 'w-5 h-5 rounded-full border-2 border-white bg-cyan-400 shadow-[0_0_15px_#00f3ff] flex items-center justify-center transition-transform';
+          outerRing.className = 'w-12 h-12 rounded-full border border-dashed border-cyan-400/60 bg-cyan-950/20 shadow-[0_0_15px_rgba(0,243,255,0.3)] flex items-center justify-center transition-all';
+          ratingBadge.innerHTML = 'تقييم مكان الجوستيك على الشاشة: <span class="text-cyan-400">✨ ممتاز (استجابة حركة فائقة)</span>';
+        }
+      } else {
+        state.joystick.rating = 'bad';
+        innerKnob.className = 'w-5 h-5 rounded-full border-2 border-white bg-rose-500 shadow-[0_0_15px_#f43f5e] flex items-center justify-center transition-transform';
+        outerRing.className = 'w-12 h-12 rounded-full border border-dashed border-rose-500/60 bg-rose-950/20 shadow-[0_0_15px_rgba(244,63,94,0.3)] flex items-center justify-center transition-all';
+        ratingBadge.innerHTML = 'تقييم مكان الجوستيك على الشاشة: <span class="text-rose-400">⚠️ سيئ (انقره للمنطقة الخضراء لتفادي الدمج الوهمي)</span>';
+      }
+    }
+
+    function resetJoystickToIdeal() {
+      const rect = previewArea.getBoundingClientRect();
+      updateJoystick(rect.left + (rect.width * 0.28), rect.top + (rect.height * 0.72));
+    }
+
+    previewArea.addEventListener('pointerdown', (e) => {
+      isDragging = true;
+      try { previewArea.setPointerCapture(e.pointerId); } catch(err){}
+      updateJoystick(e.clientX, e.clientY);
+    });
+
+    previewArea.addEventListener('pointermove', (e) => {
+      if (!isDragging) return;
+      updateJoystick(e.clientX, e.clientY);
+    });
+
+    previewArea.addEventListener('pointerup', (e) => {
+      isDragging = false;
+      try { previewArea.releasePointerCapture(e.pointerId); } catch(err){}
+    });
+
+    // Inputs listeners
+    document.getElementById('device-model-input').addEventListener('input', (e) => {
+      state.deviceModel = e.target.value;
+      renderSensitivityRows();
+    });
+    document.getElementById('screen-type-select').addEventListener('change', (e) => {
+      state.screen = e.target.value;
+      renderSensitivityRows();
+    });
+    document.getElementById('layout-select').addEventListener('change', (e) => { state.layout = e.target.value; });
+    document.getElementById('fingers-select').addEventListener('change', (e) => { state.fingers = e.target.value; });
+    document.getElementById('thumb-select').addEventListener('change', (e) => {
+      state.thumb = e.target.value;
+      document.getElementById('hud-joystick-size').innerText = (e.target.value === 'صغير') ? '90% - 95%' : (e.target.value === 'كبير') ? '120% - 130%' : '105% - 115%';
+    });
+    document.getElementById('fps-select').addEventListener('change', (e) => {
+      state.fps = e.target.value;
+      renderSensitivityRows();
+    });
+    document.getElementById('gyro-select').addEventListener('change', (e) => {
+      state.gyro = e.target.value;
+      renderSensitivityRows();
+    });
+
+    // Init
+    renderModeButtons();
+    renderCategoryTabs();
+    populateWeaponSelect();
+    renderScopeTabs();
+    renderSensitivityRows();
+  </script>
+</body>
+</html>
